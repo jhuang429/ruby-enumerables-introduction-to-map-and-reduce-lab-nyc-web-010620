@@ -71,6 +71,7 @@ def reduce_to_any_true(array)
       result = true
       i += 1
     end
+    result
   end
 
 end
