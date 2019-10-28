@@ -51,14 +51,10 @@ end
 
 def reduce_to_all_true(array)
   i = 0
-  total = 0
-  result = false
+  result = true
   while i < array.length do
-    total += array[i]
-    i += 1
-  end
-  if total.is_a? integer
-    result = true
+    if array!
+      result = false
   end
   result
 end
