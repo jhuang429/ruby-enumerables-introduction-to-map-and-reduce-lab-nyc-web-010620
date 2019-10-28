@@ -56,6 +56,7 @@ def reduce_to_all_true(array)
     if array!
       result = false
     end
+    i += 1
   end
   result
 end
@@ -63,14 +64,12 @@ end
 def reduce_to_any_true(array)
   i = 0
   total = 0
-  result = true
+  result = false
   
   while i < array.length do
-    total += array[i]
+    if array[i]
+      result = true
     i += 1
   end
-  if total.is_a? integer
-    result = false
-  end
-  result
+
 end
