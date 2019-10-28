@@ -60,7 +60,7 @@ def reduce_to_all_true(array)
   result
 end
 
-def reduce_to_all_true(array)
+def reduce_to_any_true(array)
   i = 0
   total = 0
   result = true
