@@ -53,7 +53,7 @@ def reduce_to_all_true(array)
   i = 0
   result = true
   while i < array.length do
-    if array!
+    if array
       result = false
     end
     i += 1
